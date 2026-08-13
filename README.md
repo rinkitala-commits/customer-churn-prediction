@@ -10,6 +10,42 @@ The complete pipeline includes:
 
 Dataset → Data Cleaning → Feature Engineering → Classification → Model Evaluation → Prediction → Streamlit → Deployment
 
+## 📊 Exploratory Data Analysis
+
+The project performs Exploratory Data Analysis (EDA) to understand customer churn patterns and identify important relationships between customer characteristics and churn behavior.
+
+### Churn Distribution
+
+The dataset contains **7,032 customers** after data cleaning.
+
+- 👤 **5,163 customers (73.42%)** did not churn.
+- ⚠️ **1,869 customers (26.58%)** churned.
+
+![Churn Distribution](models/churn_distribution.png)
+
+### Churn by Contract Type
+
+Contract type is analyzed to understand how customer contracts relate to churn behavior.
+
+![Churn by Contract](models/churn_by_contract.png)
+
+### Churn by Internet Service
+
+Internet service type is analyzed to identify differences in churn behavior across service categories.
+
+![Churn by Internet Service](models/churn_by_internet_service.png)
+
+### Tenure vs Churn
+
+Customer tenure is analyzed to understand whether customers with different lengths of service show different churn patterns.
+
+![Tenure vs Churn](models/tenure_vs_churn.png)
+
+### Monthly Charges vs Churn
+
+Monthly charges are analyzed to understand their relationship with customer churn.
+
+![Monthly Charges vs Churn](models/monthly_charges_vs_churn.png)
 ## 📊 Model Performance
 
 The project compares Logistic Regression and Random Forest using multiple classification metrics.
