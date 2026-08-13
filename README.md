@@ -10,6 +10,31 @@ The complete pipeline includes:
 
 Dataset → Data Cleaning → Feature Engineering → Classification → Model Evaluation → Prediction → Streamlit → Deployment
 
+## 📊 Model Performance
+
+The project compares Logistic Regression and Random Forest using multiple classification metrics.
+
+| Metric | Description |
+|---|---|
+| Accuracy | Overall percentage of correct predictions |
+| Precision | How many predicted churn customers actually churned |
+| Recall | How many actual churn customers were identified |
+| F1 Score | Balance between precision and recall |
+| ROC-AUC | Ability of the model to distinguish between churn and non-churn customers |
+
+The final model is selected based on F1 Score.
+
+## 🌐 Live Demo
+
+🚀 **Live App:** https://customer-churn-prediction-xxzbq3mo5xmriiaatfwadp.streamlit.app/
+
+The deployed application allows users to enter customer information and receive:
+
+- Churn prediction
+- Churn probability
+- Risk assessment
+- Customer summary
+
 ## 🧠 Machine Learning Workflow
 
 ### 1. Data Cleaning
