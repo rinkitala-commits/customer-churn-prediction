@@ -46,6 +46,21 @@ Customer tenure is analyzed to understand whether customers with different lengt
 Monthly charges are analyzed to understand their relationship with customer churn.
 
 ![Monthly Charges vs Churn](models/monthly_charges_vs_churn.png)
+
+## 🧠 Feature Importance
+
+Random Forest feature importance was used to identify the customer attributes that contributed most to the model's churn predictions.
+
+The analysis helps understand which customer characteristics have the strongest influence on churn prediction.
+
+![Feature Importance](models/feature_importance.png)
+
+### 🔍 Why Feature Importance Matters
+
+Feature importance provides interpretability by showing which variables contribute most to the model's decisions.
+
+This can help businesses identify customer characteristics associated with higher churn risk and potentially develop targeted retention strategies.
+
 ## 📊 Model Performance
 
 The project compares Logistic Regression and Random Forest using multiple classification metrics.
