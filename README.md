@@ -24,6 +24,12 @@ The project compares Logistic Regression and Random Forest using multiple classi
 
 The final model is selected based on F1 Score.
 
+### 📊 Confusion Matrix
+
+The confusion matrix shows the model's correct and incorrect predictions for churn and non-churn customers.
+
+![Confusion Matrix](models/confusion_matrix.png)
+
 ## 🌐 Live Demo
 
 🚀 **Live App:** https://customer-churn-prediction-xxzbq3mo5xmriiaatfwadp.streamlit.app/
