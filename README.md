@@ -1,0 +1,90 @@
+# 🤖 Customer Churn Prediction
+
+A machine learning web application that predicts whether a customer is likely to churn based on customer demographics, services, contract details, and billing information.
+
+## 🚀 Project Overview
+
+Customer churn is an important business problem. This project uses machine learning classification algorithms to identify customers who may be at risk of leaving.
+
+The complete pipeline includes:
+
+Dataset → Data Cleaning → Feature Engineering → Classification → Model Evaluation → Prediction → Streamlit → Deployment
+
+## 🧠 Machine Learning Workflow
+
+### 1. Data Cleaning
+- Removed unnecessary customer ID
+- Converted TotalCharges into numeric format
+- Handled missing values
+- Checked data types and distributions
+
+### 2. Feature Engineering
+- Separated features and target
+- Converted Churn into binary values
+- Identified numerical and categorical features
+- Applied StandardScaler to numerical features
+- Applied OneHotEncoder to categorical features
+
+### 3. Classification Models
+
+The project evaluates:
+
+- Logistic Regression
+- Random Forest Classifier
+
+### 4. Model Evaluation
+
+Models are evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC
+- Confusion Matrix
+
+### 5. Prediction
+
+The trained model predicts:
+
+- Likely to Churn
+- Not Likely to Churn
+
+It also provides a churn probability.
+
+### 6. Streamlit Application
+
+The interactive dashboard allows users to enter customer information and receive an instant churn prediction.
+
+## 🛠️ Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Joblib
+- Streamlit
+
+## 📁 Project Structure
+
+```text
+customer_churn_prediction/
+│
+├── data/
+│   └── customer_churn.csv
+│
+├── models/
+│   ├── churn_model.pkl
+│   ├── preprocessor.pkl
+│   └── confusion_matrix.png
+│
+├── notebooks/
+│
+├── app.py
+├── predict.py
+├── train_model.py
+├── requirements.txt
+├── README.md
+└── .gitignore
