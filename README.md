@@ -113,6 +113,35 @@ This is particularly useful for churn prediction because identifying potential c
 
 ![Precision-Recall Curve](models/precision_recall_curve.png)
 
+### 🧩 Confusion Matrix
+
+The confusion matrix shows how well the selected Logistic Regression model classifies customers into churn and non-churn categories.
+
+It provides four important outcomes:
+
+- **True Negative:** Correctly predicted non-churn customers
+- **True Positive:** Correctly predicted churn customers
+- **False Positive:** Non-churn customers incorrectly predicted as churn
+- **False Negative:** Churn customers incorrectly predicted as non-churn
+
+![Confusion Matrix](models/confusion_matrix.png)
+
+### 📊 Confusion Matrix Results
+
+The Logistic Regression model produced the following results on the test dataset:
+
+| Metric | Score |
+|---|---:|
+| Accuracy | **80.38%** |
+| Churn Precision | **64.85%** |
+| Churn Recall | **57.22%** |
+| Churn F1 Score | **60.80%** |
+| ROC-AUC | **83.59%** |
+
+The model correctly identified **214 churn customers** while identifying **917 non-churn customers** correctly.
+
+The confusion matrix also shows that **160 actual churn customers were incorrectly classified as non-churn**, highlighting an opportunity for future improvement through threshold tuning, class balancing, or hyperparameter optimization.
+
 ### 🥇 Selected Model
 
 **Logistic Regression** achieved the highest performance across the evaluated metrics and was selected as the preferred model for customer churn prediction.
