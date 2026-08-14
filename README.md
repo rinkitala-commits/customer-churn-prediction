@@ -84,6 +84,17 @@ Two classification models were evaluated using the same training and testing dat
 | **Logistic Regression** | **80.38%** | **64.85%** | **57.22%** | **60.80%** | **83.59%** |
 | Random Forest | 78.96% | 63.45% | 49.20% | 55.42% | 81.40% |
 
+## ⚙️ Hyperparameter Tuning
+
+GridSearchCV with 5-fold cross-validation was used to tune the Logistic Regression model.
+
+### Best Parameters
+
+```text
+C = 1
+class_weight = balanced
+solver = liblinear
+
 ### 📊 Model Comparison Visualization
 
 The chart below compares Logistic Regression and Random Forest across Accuracy, Precision, Recall, F1 Score, and ROC-AUC.
