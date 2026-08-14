@@ -75,6 +75,33 @@ The project compares Logistic Regression and Random Forest using multiple classi
 
 The final model is selected based on F1 Score.
 
+### 🏆 Model Comparison
+
+Two classification models were evaluated using the same training and testing data.
+
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| **Logistic Regression** | **80.38%** | **64.85%** | **57.22%** | **60.80%** | **83.59%** |
+| Random Forest | 78.96% | 63.45% | 49.20% | 55.42% | 81.40% |
+
+### 📊 Model Comparison Visualization
+
+The chart below compares Logistic Regression and Random Forest across Accuracy, Precision, Recall, F1 Score, and ROC-AUC.
+
+![Model Comparison](models/model_comparison.png)
+
+### 🥇 Selected Model
+
+**Logistic Regression** achieved the highest performance across the evaluated metrics and was selected as the preferred model for customer churn prediction.
+
+The model achieved:
+
+- **Accuracy:** 80.38%
+- **Precision:** 64.85%
+- **Recall:** 57.22%
+- **F1 Score:** 60.80%
+- **ROC-AUC:** 83.59%
+
 ### 📊 Confusion Matrix
 
 The confusion matrix shows the model's correct and incorrect predictions for churn and non-churn customers.
