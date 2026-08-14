@@ -15,10 +15,21 @@ st.set_page_config(
 
 # Title
 st.title("🤖 Customer Churn Prediction")
-
+st.markdown(
+    """
+    Predict whether a customer is likely to churn using
+    Machine Learning.
+    """
+)
 st.write(
     "Enter customer information below to predict "
     "the likelihood of churn."
+)
+
+st.info(
+    "💡 The model uses customer demographics, services, "
+    "contract details, and billing information to estimate "
+    "churn probability."
 )
 
 st.divider()
@@ -192,8 +203,24 @@ if st.button("🔮 Predict Churn", type="primary"):
 
     if prediction == 1:
         st.error("⚠️ Likely to Churn")
+        st.warning(
+            "This customer shows a higher estimated risk of churn."
+        )
     else:
         st.success("✅ Not Likely to Churn")
+        st.info(
+            "This customer shows a lower estimated risk of churn."
+        )
+        st.subheader("🎯 Churn Probability")
+
+        st.progress(
+            float(probability)
+        )
+
+        st.write(
+            f"Estimated Churn Probability: "
+            f"**{probability:.2%}**"
+        )
 
     st.metric(
         "Churn Probability",
