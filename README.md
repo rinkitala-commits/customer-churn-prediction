@@ -10,6 +10,19 @@ The complete pipeline includes:
 
 Dataset → Data Cleaning → Feature Engineering → Classification → Model Evaluation → Prediction → Streamlit → Deployment
 
+## 🌐 Live Demo
+
+🚀 **[Try the Customer Churn Prediction App](https://customer-churn-prediction-xxzbq3mo5xmriiaatfwadp.streamlit.app/)**
+
+🔗 **[GitHub Repository](https://github.com/rinkitala-commits/customer-churn-prediction)**
+
+The deployed application allows users to enter customer information and receive:
+
+- Churn prediction
+- Churn probability
+- Risk assessment
+- Customer summary
+
 ## 📊 Exploratory Data Analysis
 
 The project performs Exploratory Data Analysis (EDA) to understand customer churn patterns and identify important relationships between customer characteristics and churn behavior.
@@ -170,18 +183,7 @@ The model achieved:
 The confusion matrix shows the model's correct and incorrect predictions for churn and non-churn customers.
 
 ![Confusion Matrix](models/confusion_matrix.png)
-
-## 🌐 Live Demo
-
-🚀 **Live App:** https://customer-churn-prediction-xxzbq3mo5xmriiaatfwadp.streamlit.app/
-
-The deployed application allows users to enter customer information and receive:
-
-- Churn prediction
-- Churn probability
-- Risk assessment
-- Customer summary
-
+---
 ## 🧠 Machine Learning Workflow
 
 ### 1. Data Cleaning
