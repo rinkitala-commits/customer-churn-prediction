@@ -90,6 +90,21 @@ The chart below compares Logistic Regression and Random Forest across Accuracy, 
 
 ![Model Comparison](models/model_comparison.png)
 
+### 📈 ROC Curve
+
+The ROC curve compares the ability of Logistic Regression and Random Forest to distinguish between customers who churn and customers who do not churn.
+
+A higher ROC-AUC indicates better classification performance.
+
+![ROC Curve](models/roc_curve.png)
+
+**ROC-AUC Results:**
+
+- Logistic Regression: **83.59%**
+- Random Forest: **81.40%**
+
+Logistic Regression achieved the higher ROC-AUC score and was selected as the preferred model.
+
 ### 🥇 Selected Model
 
 **Logistic Regression** achieved the highest performance across the evaluated metrics and was selected as the preferred model for customer churn prediction.
