@@ -105,6 +105,14 @@ A higher ROC-AUC indicates better classification performance.
 
 Logistic Regression achieved the higher ROC-AUC score and was selected as the preferred model.
 
+### 🎯 Precision-Recall Curve
+
+The Precision-Recall curve evaluates the model's ability to identify customers who are likely to churn while maintaining prediction precision.
+
+This is particularly useful for churn prediction because identifying potential churn customers is an important business objective.
+
+![Precision-Recall Curve](models/precision_recall_curve.png)
+
 ### 🥇 Selected Model
 
 **Logistic Regression** achieved the highest performance across the evaluated metrics and was selected as the preferred model for customer churn prediction.
