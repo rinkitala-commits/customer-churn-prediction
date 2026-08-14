@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
@@ -229,3 +230,39 @@ print(
     "\nModel comparison saved to "
     "models/model_comparison.csv"
 )
+
+# ==============================
+# Model Comparison Chart
+# ==============================
+
+metrics = [
+    "Accuracy",
+    "Precision",
+    "Recall",
+    "F1 Score",
+    "ROC-AUC"
+]
+
+results_plot = results_df.set_index("Model")[metrics]
+
+ax = results_plot.plot(
+    kind="bar",
+    figsize=(10, 6)
+)
+
+ax.set_title("Logistic Regression vs Random Forest")
+ax.set_ylabel("Score")
+ax.set_xlabel("Model")
+ax.set_ylim(0, 1)
+
+ax.legend(
+    title="Metrics"
+)
+
+plt.tight_layout()
+
+plt.savefig(
+    "models/model_comparison.png"
+)
+
+plt.show()
