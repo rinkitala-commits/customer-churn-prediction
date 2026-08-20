@@ -107,6 +107,7 @@ GridSearchCV with 5-fold cross-validation was used to tune the Logistic Regressi
 C = 1
 class_weight = balanced
 solver = liblinear
+```
 
 ### 📊 Model Comparison Visualization
 
